@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
--- https://www.phpmyadmin.net/
+-- version 4.5.1
+-- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 27-Fev-2019 às 15:50
--- Versão do servidor: 10.1.37-MariaDB
--- versão do PHP: 5.6.40
+-- Generation Time: 01-Mar-2019 às 14:55
+-- Versão do servidor: 10.1.10-MariaDB
+-- PHP Version: 5.6.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -25,10 +23,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `administrador`
+-- Estrutura da tabela `g3_administrador`
 --
 
-CREATE TABLE `administrador` (
+CREATE TABLE `g3_administrador` (
   `cod_admin` int(4) NOT NULL,
   `cod_end` int(4) NOT NULL,
   `cod_contato` int(4) NOT NULL,
@@ -41,10 +39,10 @@ CREATE TABLE `administrador` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `contato`
+-- Estrutura da tabela `g3_contato`
 --
 
-CREATE TABLE `contato` (
+CREATE TABLE `g3_contato` (
   `cod_contato` int(4) NOT NULL,
   `email` varchar(20) NOT NULL,
   `telefone` int(40) NOT NULL,
@@ -54,10 +52,10 @@ CREATE TABLE `contato` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `empresa`
+-- Estrutura da tabela `g3_empresa`
 --
 
-CREATE TABLE `empresa` (
+CREATE TABLE `g3_empresa` (
   `cod_empresa` int(4) NOT NULL,
   `cod_end` int(4) NOT NULL,
   `nome_empresa` varchar(40) NOT NULL,
@@ -68,10 +66,10 @@ CREATE TABLE `empresa` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `endereco`
+-- Estrutura da tabela `g3_endereco`
 --
 
-CREATE TABLE `endereco` (
+CREATE TABLE `g3_endereco` (
   `cod_end` int(4) NOT NULL,
   `logradouro` varchar(100) NOT NULL,
   `cep` int(8) NOT NULL,
@@ -82,10 +80,10 @@ CREATE TABLE `endereco` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `produto`
+-- Estrutura da tabela `g3_produto`
 --
 
-CREATE TABLE `produto` (
+CREATE TABLE `g3_produto` (
   `cod_produto` int(4) NOT NULL,
   `cod_empresa` int(4) NOT NULL,
   `nome_produto` varchar(40) NOT NULL,
@@ -98,37 +96,42 @@ CREATE TABLE `produto` (
 --
 
 --
--- Indexes for table `administrador`
+-- Indexes for table `g3_administrador`
 --
-ALTER TABLE `administrador`
+ALTER TABLE `g3_administrador`
   ADD PRIMARY KEY (`cod_admin`),
+  ADD UNIQUE KEY `cod_admin` (`cod_admin`),
   ADD KEY `cod_end` (`cod_end`),
   ADD KEY `cod_contato` (`cod_contato`);
 
 --
--- Indexes for table `contato`
+-- Indexes for table `g3_contato`
 --
-ALTER TABLE `contato`
-  ADD PRIMARY KEY (`cod_contato`);
+ALTER TABLE `g3_contato`
+  ADD PRIMARY KEY (`cod_contato`),
+  ADD UNIQUE KEY `cod_contato` (`cod_contato`);
 
 --
--- Indexes for table `empresa`
+-- Indexes for table `g3_empresa`
 --
-ALTER TABLE `empresa`
+ALTER TABLE `g3_empresa`
   ADD PRIMARY KEY (`cod_empresa`),
+  ADD UNIQUE KEY `cod_empresa` (`cod_empresa`),
   ADD KEY `cod_end` (`cod_end`);
 
 --
--- Indexes for table `endereco`
+-- Indexes for table `g3_endereco`
 --
-ALTER TABLE `endereco`
-  ADD PRIMARY KEY (`cod_end`);
+ALTER TABLE `g3_endereco`
+  ADD PRIMARY KEY (`cod_end`),
+  ADD UNIQUE KEY `cod_end` (`cod_end`);
 
 --
--- Indexes for table `produto`
+-- Indexes for table `g3_produto`
 --
-ALTER TABLE `produto`
+ALTER TABLE `g3_produto`
   ADD PRIMARY KEY (`cod_produto`),
+  ADD UNIQUE KEY `cod_produto` (`cod_produto`),
   ADD KEY `cod_empresa` (`cod_empresa`);
 
 --
@@ -136,35 +139,52 @@ ALTER TABLE `produto`
 --
 
 --
--- AUTO_INCREMENT for table `administrador`
+-- AUTO_INCREMENT for table `g3_administrador`
 --
-ALTER TABLE `administrador`
+ALTER TABLE `g3_administrador`
   MODIFY `cod_admin` int(4) NOT NULL AUTO_INCREMENT;
-
 --
--- AUTO_INCREMENT for table `contato`
+-- AUTO_INCREMENT for table `g3_contato`
 --
-ALTER TABLE `contato`
+ALTER TABLE `g3_contato`
   MODIFY `cod_contato` int(4) NOT NULL AUTO_INCREMENT;
-
 --
--- AUTO_INCREMENT for table `empresa`
+-- AUTO_INCREMENT for table `g3_empresa`
 --
-ALTER TABLE `empresa`
+ALTER TABLE `g3_empresa`
   MODIFY `cod_empresa` int(4) NOT NULL AUTO_INCREMENT;
-
 --
--- AUTO_INCREMENT for table `endereco`
+-- AUTO_INCREMENT for table `g3_endereco`
 --
-ALTER TABLE `endereco`
+ALTER TABLE `g3_endereco`
   MODIFY `cod_end` int(4) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `g3_produto`
+--
+ALTER TABLE `g3_produto`
+  MODIFY `cod_produto` int(4) NOT NULL AUTO_INCREMENT;
+--
+-- Constraints for dumped tables
+--
 
 --
--- AUTO_INCREMENT for table `produto`
+-- Limitadores para a tabela `g3_administrador`
 --
-ALTER TABLE `produto`
-  MODIFY `cod_produto` int(4) NOT NULL AUTO_INCREMENT;
-COMMIT;
+ALTER TABLE `g3_administrador`
+  ADD CONSTRAINT `g3_administrador_ibfk_1` FOREIGN KEY (`cod_end`) REFERENCES `g3_endereco` (`cod_end`),
+  ADD CONSTRAINT `g3_administrador_ibfk_2` FOREIGN KEY (`cod_contato`) REFERENCES `g3_contato` (`cod_contato`);
+
+--
+-- Limitadores para a tabela `g3_empresa`
+--
+ALTER TABLE `g3_empresa`
+  ADD CONSTRAINT `g3_empresa_ibfk_1` FOREIGN KEY (`cod_end`) REFERENCES `g3_endereco` (`cod_end`);
+
+--
+-- Limitadores para a tabela `g3_produto`
+--
+ALTER TABLE `g3_produto`
+  ADD CONSTRAINT `g3_produto_ibfk_1` FOREIGN KEY (`cod_empresa`) REFERENCES `g3_empresa` (`cod_empresa`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
