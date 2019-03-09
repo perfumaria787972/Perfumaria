@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 01-Mar-2019 às 14:55
+-- Generation Time: 08-Mar-2019 às 15:46
 -- Versão do servidor: 10.1.10-MariaDB
 -- PHP Version: 5.6.15
 
@@ -29,12 +29,18 @@ SET time_zone = "+00:00";
 CREATE TABLE `g3_administrador` (
   `cod_admin` int(4) NOT NULL,
   `cod_end` int(4) NOT NULL,
-  `cod_contato` int(4) NOT NULL,
-  `nome_admin` int(40) NOT NULL,
-  `sobrenome_admin` int(20) NOT NULL,
-  `login` int(14) NOT NULL,
-  `senha` int(100) NOT NULL
+  `nome_admin` varchar(40) NOT NULL,
+  `sobrenome_admin` varchar(20) NOT NULL,
+  `login` varchar(14) NOT NULL,
+  `senha` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `g3_administrador`
+--
+
+INSERT INTO `g3_administrador` (`cod_admin`, `cod_end`, `nome_admin`, `sobrenome_admin`, `login`, `senha`) VALUES
+(9, 8, 'gabriel', 'santos', 'gustavomaximia', '123');
 
 -- --------------------------------------------------------
 
@@ -77,6 +83,13 @@ CREATE TABLE `g3_endereco` (
   `bairro` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Extraindo dados da tabela `g3_endereco`
+--
+
+INSERT INTO `g3_endereco` (`cod_end`, `logradouro`, `cep`, `numero`, `bairro`) VALUES
+(8, 'estrada engenho da pedra', 2147483647, 320, 'ramos');
+
 -- --------------------------------------------------------
 
 --
@@ -87,7 +100,7 @@ CREATE TABLE `g3_produto` (
   `cod_produto` int(4) NOT NULL,
   `cod_empresa` int(4) NOT NULL,
   `nome_produto` varchar(40) NOT NULL,
-  `descrição` varchar(40) NOT NULL,
+  `descricao` varchar(40) NOT NULL,
   `marca` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -101,8 +114,7 @@ CREATE TABLE `g3_produto` (
 ALTER TABLE `g3_administrador`
   ADD PRIMARY KEY (`cod_admin`),
   ADD UNIQUE KEY `cod_admin` (`cod_admin`),
-  ADD KEY `cod_end` (`cod_end`),
-  ADD KEY `cod_contato` (`cod_contato`);
+  ADD KEY `cod_end` (`cod_end`);
 
 --
 -- Indexes for table `g3_contato`
@@ -142,7 +154,7 @@ ALTER TABLE `g3_produto`
 -- AUTO_INCREMENT for table `g3_administrador`
 --
 ALTER TABLE `g3_administrador`
-  MODIFY `cod_admin` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `cod_admin` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT for table `g3_contato`
 --
@@ -157,7 +169,7 @@ ALTER TABLE `g3_empresa`
 -- AUTO_INCREMENT for table `g3_endereco`
 --
 ALTER TABLE `g3_endereco`
-  MODIFY `cod_end` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `cod_end` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `g3_produto`
 --
@@ -171,8 +183,7 @@ ALTER TABLE `g3_produto`
 -- Limitadores para a tabela `g3_administrador`
 --
 ALTER TABLE `g3_administrador`
-  ADD CONSTRAINT `g3_administrador_ibfk_1` FOREIGN KEY (`cod_end`) REFERENCES `g3_endereco` (`cod_end`),
-  ADD CONSTRAINT `g3_administrador_ibfk_2` FOREIGN KEY (`cod_contato`) REFERENCES `g3_contato` (`cod_contato`);
+  ADD CONSTRAINT `g3_administrador_ibfk_1` FOREIGN KEY (`cod_end`) REFERENCES `g3_endereco` (`cod_end`);
 
 --
 -- Limitadores para a tabela `g3_empresa`
