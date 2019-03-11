@@ -1,15 +1,57 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<?php
+    include('navbar.php');
+?>  
 <html>
     <head>
         <meta charset="UTF-8">
         <title></title>
     </head>
-    <body>
+    <body> <body>                 
+<div class="bd-example">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/seline.jpg.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/la.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>la vie</h5>
+          <p></p>
+        </div>
+      </div>
+        
+        <div class="carousel-item">
+        <img src="img/lancamentos1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+        
+      <div class="carousel-item">
+        <img src="img/lancamentos2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+    </body>
         <?php
         // put your code here
         ?>

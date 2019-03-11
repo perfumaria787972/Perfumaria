@@ -14,100 +14,115 @@
                 
                 
                 <div class="card" style="width: 18rem;">
-  <img src="img/perfume1.png" class="card-img-top" alt="imagem-perfume">
+  <img src="img/perfume3.png" class="card-img-top" alt="imagem-perfume">
   <div class="card-body">
-    <h5 class="card-title">Shalimar</h5>
-    <p class="card-text">Shalimar Parfum Initial de Guerlain é um perfume Chipre Floral Feminino. Shalimar Parfum Initial foi lançado em 2011. O perfumista que assina esta fragância é Thierry Wasser.</p>
+    <h5 class="card-title">Our moment</h5>
+    <p class="card-text">Our Moment é a fragrância de estreia para mulheres endossadas pela boyband inglesa e irlandesa One Direction. Foi lançado em 6 de junho de 2013 em Londres.</p>
+  <a href="perfumef3.php" class="btn btn-primary">Informações</a>
   </div>
 </div>
                 
             <div class="card" style="width: 18rem;">
-  <img src="img/perfume2.png" class="card-img-top" alt="imagem-perfume">
+  <img src="img/perfume6.png" class="card-img-top" alt="imagem-perfume">
   <div class="card-body">
-    <h5 class="card-title">Guerlain</h5>
-    <p class="card-text">O designer Guerlain tem 381 perfumes na nossa base de fragrância. Guerlain é uma casa de perfumes antiga. A edição mais antiga foi criada em 1860 e a mais recente em 2019.</p>
+    <h5 class="card-title">versace</h5>
+    <p class="card-text">Com a ajuda dos irmãos Santo e Donatella, Gianni Versace criou o seu império da moda. Foram criadas linhas como Instante, Versus e Versace Jeans Couture. Celebridades do porte de Madonna e Michael Jackson tornaram-se clientes da casa e a princesa Diana virou amiga do estilista. Sem Gianni, Santo e Donatella continuaram firmes no controle dos negócios.</p>
+  <a href="perfumef6.php" class="btn btn-primary">Informações</a>
   </div>
 </div>
                 
                 <div class="card" style="width: 18rem;">
-  <img src="img/perfume4.png" class="card-img-top" alt="imagem-perfume">
+  <img src="img/perfume14.png" class="card-img-top" alt="imagem-perfume">
   <div class="card-body">
-    <h5 class="card-title">Boucheron</h5>
-    <p class="card-text">Ambre D'Alexandrie de Boucheron é um perfume Oriental Compartilhável. Esta é uma nova fragrância. Ambre D'Alexandrie foi lançado em 2017.</p>
+    <h5 class="card-title">Rum chata</h5>
+    <p class="card-text">RumChata é uma receita de creme de licor que usa rum caribenho cinco vezes destilado e creme de leite real com canela natural, baunilha, açúcar e outros sabores secretos</p>
+  <a href="perfumef14.php" class="btn btn-primary">Informações</a>
   </div>
 </div>
                 
                 <div class="card" style="width: 18rem;">
-  <img src="img/perume5.png" class="card-img-top" alt="imagem-perfume">
+  <img src="img/perfume15.png" class="card-img-top" alt="imagem-perfume">
   <div class="card-body">
-    <h5 class="card-title">Gucci Bamboo</h5>
-    <p class="card-text">Gucci Bamboo de Gucci é um perfume Floral Feminino. Gucci Bamboo foi lançado em 2015. A nota de topo é Bargamota as notas de coração são de Ylang Ylang.</p>
+    <h5 class="card-title">Victor brolf</h5>
+    <p class="card-text">As Fragrâncias de vcitor traduzem as riquezas naturais e culturais do Brasil em alegria, brasilidade e espontaneidade, com um toque de poesia e delicadeza. Confira as opções de fragrâncias unissex, masculinas e femininas com notas florais, frutadas, orientais, cítricas e amadeiradas para todos os gostos</p>
+  <a href="perfumef15.php" class="btn btn-primary">Informações</a>
   </div>
 </div>
                 
                 <div class="card" style="width: 18rem;">
-  <img src="img/perfume13.png" class="card-img-top" alt="...">
+  <img src="img/perfume16.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Queen of seduction</h5>
-    <p class="card-text">Queen of Seduction é uma fragrância atraente e sensual inspirada no poder da atração, para uma mulher sofisticada, feminina e com forte personalidade, uma mulher que está à altura do Rei da Sedução</p>
-    
+    <h5 class="card-title">Intimately</h5>
+    <p class="card-text">Perfume feminino radiante para mulheres modernas e requintadas, que adoram um elogio. Além de requintado, David Beckham Intimately Woman é elegantemente sensual e promove uma explosão voluptuosa, capaz de atrair quem quer que seja.   Uma poderosa arma de sedução, Intimately Woman, de David Beckham, é ideal para momentos marcantes, onde o jogo de conquista fala mais alto.</p>
+   <a href="perfumef16.php" class="btn btn-primary">Informações</a> 
   </div>
 </div>
                 
                 <div class="card" style="width: 18rem;">
-  <img src="img/perfume7.png" class="card-img-top" alt="...">
+  <img src="img/feminino8.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Blood</h5>
-    <p class="card-text">Capturando o espírito da mulher contemporânea de Gucci, com toda sua diversidade e autenticidade, Bloom é a primeira fragrância do diretor criativo Alessandro Michele para a Casa Gucci. Imaginado como um próspero jardim de flores, Bloom foi criado para florescer como seu nome</p>
-    </div>
-</div>
-                
-                <div class="card" style="width: 18rem;">
-  <img src="img/perfume8.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Gold issime</h5>
-    <p class="card-text">Perfume Floral Aldeíco Feminino. Gold Issime foi lançado em 2000. A fragrância contém jasmim, Flor de laranjeira africana.</p>
-    </div>
-</div>
-                
-                <div class="card" style="width: 18rem;">
-  <img src="img/perfume9.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Angel</h5>
-    <p class="card-text">O Perfume Angel Eau de Parfum é inspirado na dualidade em cada mulher - parte inocência infantil, parte sofisticação e glamour. Uma fragrância atemporal e clássica, para todas as idades.</p>
-    </div>
-</div>
-                
-                <div class="card" style="width: 18rem;">
-  <img src="img/perfume10.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Thierry Mugler show collection</h5>
-    <p class="card-text">Thierry Mugler Show Collection: Alien é um perfume feminino. Foi lançado em 2010. Criado por Dominique Ropion e Lauret Bruyere.</p>
+    <h5 class="card-title">Love fearless</h5>
+    <p class="card-text">Uma fragrância Floral Gourmand com notas intensas e calorosas inspirada na celebração pelo amor à vida.</p>
+  <a href="perfumef8.php" class="btn btn-primary">Informações</a>  
   </div>
 </div>
                 
                 <div class="card" style="width: 18rem;">
-  <img src="img/perfume11.png" class="card-img-top" alt="...">
+  <img src="img/feminino9.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">The body gil</h5>
-    <p class="card-text">the body gil foi criado por Cheviêr de la mine em 2009 usando as fragrâncias de seus antigos perfumes lançados.</p>
+    <h5 class="card-title">212 VIP</h5>
+    <p class="card-text">Inspirado no estilo de vida das pessoas criativas de Nova York, o perfume 212 VIP é indicado às mulheres com estilo, talento e sede de diversão.
+
+A mulher VIP é eclética e única, está sempre em movimento e esbanja alegria e atitude por onde passa. Você está na lista? Se a resposta for positiva, o 212 VIP é indicado pra você. Sua fragrância exclusiva exala glamour e energia, com aromas frescos e radiantes</p>
+  <a href="perfumef9.php" class="btn btn-primary">Informações</a>  
   </div>
 </div>
                 
                 <div class="card" style="width: 18rem;">
-  <img src="img/perfume12.png" class="card-img-top" alt="...">
+  <img src="img/feminino5.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Blue noir</h5>
-    <p class="card-text">As essências de caramelo e chocolate remetem às alegrias dos deliciosos jogos da infância. As essências de patchouli e baunilha revelam a faceta da elegância e feminilidade da mulher. O frasco azul - um pedaço do céu cristalizado - traz esse espírito que celebra o imaginário, o mundo da fantasia</p>
-    </div>
+    <h5 class="card-title">Boss</h5>
+    <p class="card-text">Hugo Boss, marca alemã de moda e costura, é sinônimo de elegância desde sua criação, em 1923. Famosa principalmente pelos ternos impecáveis, Hugo Boss possui hoje uma vasta linha de produtos finos, que agradam a homens e mulheres sofisticados no mundo todo. </p>
+    <a href="perfumef5.php" class="btn btn-primary">Informações</a>
+  </div>
 </div>
                 
                 <div class="card" style="width: 18rem;">
-  <img src="img/perfume17.png" class="card-img-top" alt="...">
+  <img src="img/feminino3.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">BurBerry</h5>
-    <p class="card-text">Oriental verde, com notas de lima, pêra, amêndoa verde, peônia branca, amêndoa doce, madeira de Mogno, âmbar, baunilha e tonka bean. Para mulheres que combinam o espírito brincalhão com um delicioso toque de ironia. Esta é a essência do estilo britânico: irreverência sempre com muito charme, onde sua confiança e elegância se revelam através da autenticidade. A mulher Brit é o brilho do sol em um dia londrino chuvoso..</p>
-    </div>
+    <h5 class="card-title">Channel n°5</h5>
+    <p class="card-text">Gucci nasceu em Florença na década de 1920, como uma marca de artigos de couro para viagem. Ao expandir seus negócios para produtos de luxo, Gucci rapidamente atraiu uma clientela internacional e hoje é uma das marcas mais desejadas do mundo. 
+
+Seu enorme sucesso se deve à criação das mais cobiçadas roupas, acessórios e perfumes, que se tornaram clássicos imediatos na moda mundial.</p>
+  <a href="perfumef3.php" class="btn btn-primary">Informações</a>
+  </div>
+</div>
+                
+                <div class="card" style="width: 18rem;">
+  <img src="img/feminino4.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">La Rive Cuté</h5>
+    <p class="card-text">A marca polonesa tem perfumes surpreendentes, com aromas irresistíveis e que combinam com cada momento da sua vida. Suas fragrâncias estão presentes em mais de 45 países devido à alta qualidade e frascos charmosos.</p>
+  <a href="perfumef4.php" class="btn btn-primary">Informações</a>
+  </div>
+</div>
+                
+                <div class="card" style="width: 18rem;">
+  <img src="img/feminino7.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">seduction</h5>
+    <p class="card-text">Sweet Hope La Rive abre com o toque adocicado de frutas e depois envolve com a ternura de flores como tuberosa e jasmim. Por fim, intensifica com as notas quentes de baunilha e amêndoas, que aguçam a imaginação.</p>
+  <a href="perfumef7.php" class="btn btn-primary">Informações</a> 
+  </div>
+</div>
+                
+                <div class="card" style="width: 18rem;">
+  <img src="img/feminino2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Chance</h5>
+    <p class="card-text">Uma fragrância floral em um frasco com linhas arredondadas. Imprevisível, sempre em movimento, CHANCE leva você para um turbilhão de felicidade e de fantasia. Um encontro olfativo com a chance.</p>
+  <a href="perfumef2.php" class="btn btn-primary">Informações</a>  
+  </div>
 </div>
                 
                 

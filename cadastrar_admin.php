@@ -10,10 +10,11 @@ if(isset($_POST["cadastrar"])){
     $cep = $_POST["cep"];
     $login = $_POST["login"];
     $senha = $_POST["senha"];
+    $situacao = "ativo";
     
     $sqlcadendereco = "insert into g3_endereco (logradouro,numero,bairro,cep) values('".$logradouro."','".$numero."','".$bairro."','".$cep."') ";
     
-    $sqladmin = "insert into g3_administrador (nome_admin,sobrenome_admin,login,senha,cod_end) values ('".$nome."','".$sobrenome."','".$login."','".$senha."',LAST_INSERT_ID()) ";
+    $sqladmin = "insert into g3_administrador (nome_admin,sobrenome_admin,login,senha,situacao,cod_end) values ('".$nome."','".$sobrenome."','".$login."','".$senha."','".$situacao."',LAST_INSERT_ID()) ";
             
    
    if(mysqli_query($con, $sqlcadendereco)){

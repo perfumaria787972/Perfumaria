@@ -10,10 +10,13 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
+        <label><b>Login</b></label></br></br>
         <form name="form_login" method="post" action="login.php">
-            <input type="text" name="login" /><br /><br/>
-            <input type="password" name="senha" /><br /><br/>
-            <input type="submit" name="cadastrar" value="entrar" />
+            <label>E-mail:</label><input type="text" name="login" /><br /><br/>
+            <label>Senha:</label><input type="password" name="senha" /><br /><br/>
+            <input type="submit" name="cadastrar" value="Logar" />
+            
+            
         </form>
     </body>
 </html>

@@ -8,7 +8,7 @@
         <footer>
             
                 <div class="card-footer text-center border-primary">
-                    <p class="badge-dark" >Mais informações</p>
+                    <p class="badge-dark" >Visite nossas redes socias</p>
                     <div class="row">
                         <div class="col-lg-auto">
                             <div col-xl-6 class="card-footer text-center" >
@@ -31,7 +31,7 @@
 
         <div class="facebook social-button">
                 <div>
-                        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FtheRedStapler%2F&width=88&layout=button_count&action=like&size=large&show_faces=false&share=false&height=21&appId=599455787171202&locale=en_US" width="88" height="33" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    <a href="https://www.facebook.com/profile.php?id=100034539949273"</a>
                 </div>
                 <div class="cover">
                     <div class="inner">

@@ -22,10 +22,12 @@
 </div>
                 
             <div class="card" style="width: 18rem;">
-  <img src="img/perfume2.png" class="card-img-top" alt="imagem-perfume">
+  <img src="img/perfume2.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Guerlain</h5>
-    <p class="card-text">O designer Guerlain tem 381 perfumes na nossa base de fragrância. Guerlain é uma casa de perfumes antiga. A edição mais antiga foi criada em 1860 e a mais recente em 2019.</p>
+    <p class="card-text">Guerlain possui em sua composição a energia dos citros, o encanto de frescos, amêndoas masculino e a lealdade clássica de um musk e vetiver. Três elementos que irão transformá-lo em o homem ideal.
+Masculino, luxuoso, distinto. A caixa, com o seu toque arrojado de azul vibrante, vem com um código flash que convida você para um universo digital. Luminoso fosco com laca branca, o frasco enfatiza a pureza de seu design minimalista.</p>
+    <a href="perfumef2.php" class="btn btn-primary">Informações</a>
   </div>
 </div>
                 
@@ -120,7 +122,6 @@
       <li class="page-item"><a class="page-link" href="fem1.php">Voltar</a></li>
     <li class="page-item"><a class="page-link" href="fem1.php">1</a></li>
     <li class="page-item"><a class="page-link" href="fem2.php">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">Avançar</a></li>
   </ul>
 </nav>
     </body>
