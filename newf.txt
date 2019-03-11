@@ -13,11 +13,11 @@
     // Gera o nome do Arquivo
     $fileName = md5(uniqid()) . '-' . time() . '.jpeg';
 
-    // diretório com o nome do arquivo
+    // diretï¿½rio com o nome do arquivo
     $newFilename = $dirUploads . DIRECTORY_SEPARATOR . $fileName;
 
   	// http://php.net/manual/pt_BR/function.move-uploaded-file.php
-  	#move_uploaded_file(filename, destination) // essa função retorna um booleano
+  	#move_uploaded_file(filename, destination) // essa funï¿½ï¿½o retorna um booleano
 
   	if(move_uploaded_file($file['tmp_name'], $newFilename)) {
   		echo 'Arquivo enviado com sucesso. ' . $newFilename;
@@ -27,5 +27,5 @@
   		exit;
   	}
 
-
+?>
 <form action="" method="" enctype="multipart/form-data">

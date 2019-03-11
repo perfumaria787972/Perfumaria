@@ -4,6 +4,37 @@
     padding-top: 5%;
     padding-bottom: 5%;
 }
-
-
-
+#login{
+    text-align: center;
+    float: right;
+    background-color: #002752;
+}
+#navbarSupportedContent{
+    background-color: #d4edda;
+}
+#paginacao{
+    text-align: center;
+}
+#twitter{
+    float: right;
+}
+#facebook{
+    float: right;
+    margin: auto;
+    padding: auto;
+    
+}
+.inner{
+    position: absolute;
+    text-align: right;  
+}
+.social-links {
+    margin-top: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 10px;
+}

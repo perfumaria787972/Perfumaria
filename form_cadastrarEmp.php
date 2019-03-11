@@ -26,15 +26,6 @@ include 'bootstrap.php';
                 <label>Cep</label>
                 <input type="text" name="cep">
             </fieldset>
-            <fieldset>
-                <legend>Contato</legend>
-                <label>E-mail</label>
-                <input type="text" name="email">
-                <label>Telefone 1</label>
-                <input type="text" name="tel_1">
-                <label>Telefone 2</label>
-                <input type="text" name="tel_2">
-            </fieldset>
             <input type="submit" name="cadastrar">
         </form>
     </body>

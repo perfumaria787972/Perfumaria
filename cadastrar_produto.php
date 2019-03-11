@@ -21,9 +21,9 @@ if(isset($_POST["cadastrar"])){
                 $cnpj = $linha["cnpj"];
             }
         }
-        echo $cnpj;
+        echo $cod_empresa;
 
-        $sqlproduto = "insert into g3_produto (nome_produto,descricao,marca,cod_empresa) values ('$nome_produto','$descricao','$marca',LAST_INSERT_ID()) ";
+        $sqlproduto = "insert into g3_produto (nome_produto,descricao,marca,cod_empresa) values ('$nome_produto','$descricao','$marca','$cod_empresa') ";
             
         if(mysqli_query($con, $sqlproduto)){
                 echo "cadastro efetuado com sucesso!";

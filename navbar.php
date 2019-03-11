@@ -16,9 +16,6 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                  <a class="nav-link" href="inicial.php">Pagina Principal <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
                 <a class="nav-link" href="lacamentos.php">Lançamentos</a>
               </li><li class="nav-item active">
                 <a class="nav-link" href="cosmeticos.php">Cosméticos</a>
@@ -29,12 +26,8 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="masculino.php">Masculinos</a>
-<<<<<<< HEAD
-                  <a class="dropdown-item" href="#">Femininos</a>
-=======
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="feminino.php">Femininos</a>
->>>>>>> 6ec60861f1248d52fbf0e46fcb4d57a7f5c21e9a
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Talvez</a>
                 </div>
@@ -42,13 +35,10 @@
               </li><li class="nav-item active">
                 <a class="nav-link" href="form_login.php">Login</a>
               </li>
-              </li><li class="nav-item active">
-                <a class="nav-link" href="form_cadastraradmin.php">Cadastrar</a>
-              </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+              <form class="form-inline my-2 my-lg-0" method="post" action="consultar_produto.php">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Buscar" name="buscar" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="consultar">Buscar</button>
             </form>
           </div>
         </nav>
