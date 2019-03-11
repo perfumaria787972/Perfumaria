@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.8.4
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 08-Mar-2019 às 15:46
--- Versão do servidor: 10.1.10-MariaDB
--- PHP Version: 5.6.15
+-- Generation Time: 11-Mar-2019 às 02:03
+-- Versão do servidor: 10.1.37-MariaDB
+-- versão do PHP: 7.3.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -31,16 +33,20 @@ CREATE TABLE `g3_administrador` (
   `cod_end` int(4) NOT NULL,
   `nome_admin` varchar(40) NOT NULL,
   `sobrenome_admin` varchar(20) NOT NULL,
-  `login` varchar(14) NOT NULL,
-  `senha` text NOT NULL
+  `login` varchar(50) NOT NULL,
+  `senha` text NOT NULL,
+  `situacao` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `g3_administrador`
 --
 
-INSERT INTO `g3_administrador` (`cod_admin`, `cod_end`, `nome_admin`, `sobrenome_admin`, `login`, `senha`) VALUES
-(9, 8, 'gabriel', 'santos', 'gustavomaximia', '123');
+INSERT INTO `g3_administrador` (`cod_admin`, `cod_end`, `nome_admin`, `sobrenome_admin`, `login`, `senha`, `situacao`) VALUES
+(9, 8, 'gabriel', 'santos', 'gustavomaximia', '123', ''),
+(10, 9, 'gustavo2', 'maximiano', 'gustavosilva19', '123', 'inativo'),
+(11, 14, 'gustavo', 'maximiano', 'gustavosilva1939@outlook.com', '', 'ativo'),
+(12, 15, 'Debora', 'Nunes', 'Debora789@outlook.com', '123', 'ativo');
 
 -- --------------------------------------------------------
 
@@ -88,7 +94,14 @@ CREATE TABLE `g3_endereco` (
 --
 
 INSERT INTO `g3_endereco` (`cod_end`, `logradouro`, `cep`, `numero`, `bairro`) VALUES
-(8, 'estrada engenho da pedra', 2147483647, 320, 'ramos');
+(8, 'estrada engenho da pedra', 2147483647, 320, 'ramos'),
+(9, 'ItararÃ©', 21060330, 5, 'Ramos'),
+(10, 'nico mendes', 21087780, 8, 'Madureira '),
+(11, 'nico mendes', 21087780, 8, 'Madureira '),
+(12, 'ivo mendonca', 21060330, 2, 'Ramos'),
+(13, 'ivo mendonca', 21060330, 2, 'Ramos'),
+(14, 'ivo mendonca', 21060330, 2, 'Ramos'),
+(15, 'nico mendes', 21089370, 8, 'Madureira ');
 
 -- --------------------------------------------------------
 
@@ -154,27 +167,32 @@ ALTER TABLE `g3_produto`
 -- AUTO_INCREMENT for table `g3_administrador`
 --
 ALTER TABLE `g3_administrador`
-  MODIFY `cod_admin` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `cod_admin` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
 --
 -- AUTO_INCREMENT for table `g3_contato`
 --
 ALTER TABLE `g3_contato`
   MODIFY `cod_contato` int(4) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `g3_empresa`
 --
 ALTER TABLE `g3_empresa`
   MODIFY `cod_empresa` int(4) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `g3_endereco`
 --
 ALTER TABLE `g3_endereco`
-  MODIFY `cod_end` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `cod_end` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
 --
 -- AUTO_INCREMENT for table `g3_produto`
 --
 ALTER TABLE `g3_produto`
   MODIFY `cod_produto` int(4) NOT NULL AUTO_INCREMENT;
+
 --
 -- Constraints for dumped tables
 --
@@ -196,6 +214,7 @@ ALTER TABLE `g3_empresa`
 --
 ALTER TABLE `g3_produto`
   ADD CONSTRAINT `g3_produto_ibfk_1` FOREIGN KEY (`cod_empresa`) REFERENCES `g3_empresa` (`cod_empresa`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
