@@ -11,8 +11,7 @@ and open the template in the editor.
     </head>
     <body>
         <button type="button"><a href="form_produto.php">Cadastrar Produto</a></button>
-        <button type="button"><a href="form_produto.php">Editar</a></button>
+        <button type="button"><a href="form_consultaradmin.php">consultar ADM</a></button>
         <button type="button"><a href="form_produto.php">Atualizar</a></button>
-        <button type="button"><a href="form_produto.php">Excluir</a></button>
     </body>
 </html>
