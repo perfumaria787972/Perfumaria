@@ -9,62 +9,7 @@
     </head>
     <body>
         <div class="container-fluid align-self-lg-center" id="corpo">
-            <div class="row justify-content-lg-around">
-                <div class="col-2">
-                    <img src="img/parfum.jpg" alt="imagem-perfume">
-                </div>
-                <div class="col-2">
-                    <img src="img/parfum.jpg" alt="imagem-perfume">
-                </div>
-                <div class="col-2">
-                    <img src="img/parfum.jpg" alt="imagem-perfume">
-                </div>
-                <div class="col-2">
-                    <img src="img/parfum.jpg" alt="imagem-perfume">
-                </div>
-            </div>
-            <div class="row justify-content-lg-around">
-                <div class="col-2">
-                    <img src="img/parfum.jpg" alt="imagem-perfume">
-                </div>
-                <div class="col-2">
-                    <img src="img/parfum.jpg" alt="imagem-perfume">
-                </div>
-                <div class="col-2">
-                    <img src="img/parfum.jpg" alt="imagem-perfume">
-                </div>
-                <div class="col-2">
-                    <img src="img/parfum.jpg" alt="imagem-perfume">
-                </div>
-            </div>
-            <div class="row justify-content-lg-around">
-                <div class="col-2">
-                    <img src="img/parfum.jpg" alt="imagem-perfume">
-                </div>
-                <div class="col-2">
-                    <img src="img/parfum.jpg" alt="imagem-perfume">
-                </div>
-                <div class="col-2">
-                    <img src="img/parfum.jpg" alt="imagem-perfume">
-                </div>
-                <div class="col-2">
-                    <img src="img/parfum.jpg" alt="imagem-perfume">
-                </div>
-            </div>
-            <div class="row justify-content-lg-around">
-                <div class="col-2">
-                    <img src="img/parfum.jpg" alt="imagem-perfume">
-                </div>
-                <div class="col-2">
-                    <img src="img/parfum.jpg" alt="imagem-perfume">
-                </div>
-                <div class="col-2">
-                    <img src="img/parfum.jpg" alt="imagem-perfume">
-                </div>
-                <div class="col-2">
-                    <img src="img/parfum.jpg" alt="imagem-perfume">
-                </div>
-            </div>
+            
         </div>
     </body>
 </html>

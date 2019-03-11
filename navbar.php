@@ -8,7 +8,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Seline Diamonds  </a>
+            <a class="navbar-brand" href="inicial.php">Seline Diamonds  </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -19,7 +19,7 @@
                   <a class="nav-link" href="inicial.php">Pagina Principal <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">Lançamentos</a>
+                <a class="nav-link" href="lacamentos.php">Lançamentos</a>
               </li><li class="nav-item active">
                 <a class="nav-link" href="cosmeticos.php">Cosméticos</a>
               </li>
@@ -29,10 +29,21 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="masculino.php">Masculinos</a>
+<<<<<<< HEAD
                   <a class="dropdown-item" href="#">Femininos</a>
+=======
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="feminino.php">Femininos</a>
+>>>>>>> 6ec60861f1248d52fbf0e46fcb4d57a7f5c21e9a
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Talvez</a>
                 </div>
+              </li>
+              </li><li class="nav-item active">
+                <a class="nav-link" href="form_login.php">Login</a>
+              </li>
+              </li><li class="nav-item active">
+                <a class="nav-link" href="form_cadastraradmin.php">Cadastrar</a>
               </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
