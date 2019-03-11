@@ -1,21 +1,35 @@
 <?php
+include ("conexao.php");
+
 if(isset($_POST["cadastrar"])){
     
+    $nome_produto = $_POST["nome_produto"];
     $descricao = $_POST["descricao"];
     $marca = $_POST["marca"];
-    $nome_produto = $_POST["nome_produto"];
-    $imagem_produto = $_POST["imagem_produto"];   
+    $nome_emp = $_POST["empresa"];
     
-    $sqlproduto = "insert into produto (descricao,marca,nome_produto,imagem_produto) values ('".$descricao."','".$marca."','".$nome_produto."','".$imagem_produto."',LAST_INSERT_ID()) ";
-            
-    include("conexao.php");
-     
-    if(mysqli_query($con, $sqlproduto)){
-        echo "cadastro efetuado com sucesso!";
+    
+    $sqlempresa = "select * from g3_empresa where nome_empresa='$nome_emp'";
+    $consultarEmp = mysqli_query($con, $sqlempresa);
+    
+    if (mysqli_num_rows($consultarEmp) == 0){
+        echo "<h4>Nenhuma empresa registrada com esse nome foi encontrado!</h4>";
     }else{
-        echo "Não foi possivel efetuar o cadastro";
-    }    
+            while ($linha = mysqli_fetch_array($consultarEmp)) {
+                $cod_empresa = $linha["cod_empresa"];
+                $nome_empresa = $linha["nome_empresa"];
+                $cnpj = $linha["cnpj"];
+            }
+        }
+        echo $cnpj;
 
+        $sqlproduto = "insert into g3_produto (nome_produto,descricao,marca,cod_empresa) values ('$nome_produto','$descricao','$marca',LAST_INSERT_ID()) ";
+            
+        if(mysqli_query($con, $sqlproduto)){
+                echo "cadastro efetuado com sucesso!";
+            }else{
+                echo "Não foi possivel efetuar o cadastro";
+            }    
+        
 }
 ?>
-
